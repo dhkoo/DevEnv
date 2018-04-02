@@ -8,3 +8,5 @@ vimrc setting
 [for cscope setting]
 0. mkdir ~/.vim/plugin
 1. mv cscope_maps.vim ~/.vim/plugin
+
+Ctrl + \ + s/g/c/t/e..
