@@ -71,9 +71,17 @@ if has('cscope')
 	set csto=0
 	set cscopetag
 	set nocsverb
-	if filereadable("./cscope.out")
-		cs add ./cscope.out
-	endif
+	  if filereadable("./cscope.out")
+    	    cs add ./cscope.out
+	  elseif filereadable("../cscope.out")
+    	    cs add ../cscope.out
+	  elseif filereadable("../../cscope.out")
+    	    cs add ../../cscope.out
+ 	  elseif filereadable("../../../cscope.out")
+    	    cs add ../../../cscope.out
+	  elseif filereadable("../../../../cscope.out")
+    	    cs add ../../../../cscope.out
+	  endif
 	set csverb
 endif
 
