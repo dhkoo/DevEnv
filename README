@@ -1,12 +1,13 @@
 vimrc setting
 
 [for vim env setting]
-1. git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-2. donwlaods vimrc
-3. PluginInstall
+1. $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+2. add plugin in .vimrc ( use .vimrc in this repository ) 
+3. $ vim 
+  : PluginInstall
 
 [for cscope setting]
-0. mkdir ~/.vim/plugin
-1. mv cscope_maps.vim ~/.vim/plugin
+1. mkdir ~/.vim/plugin
+2. mv cscope_maps.vim ~/.vim/plugin
 
 Ctrl + \ + s/g/c/t/e..
