@@ -1,13 +1,20 @@
 vimrc setting
 
-[for vim env setting]
+[vim]
 1. $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 2. add plugin in .vimrc ( use .vimrc in this repository ) 
 3. $ vim 
   : PluginInstall
 
-[for cscope setting]
+[cscope]
 1. mkdir ~/.vim/plugin
 2. mv cscope_maps.vim ~/.vim/plugin
 
 Ctrl + \ + s/g/c/t/e..
+
+[tmux]
+mv .tmux.conf ~
+
+[github]
+자동완성 관련 파일
+gitconfig에서 alias 설정

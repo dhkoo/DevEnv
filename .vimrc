@@ -22,25 +22,22 @@ Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 
-
 " for vim-airline
 let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
 let g:airline_theme='hybrid'
 set laststatus=2 " turn on bottom bar
-
 
 set nu
 set nocompatible
 set autoindent
 set sm
 set title
-set hlsearch
+set hlsearch " 검색어 하이라이팅
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set cindent
-set nowrapscan								" 검색할 때, 끝에서 처음으로 안돌아감
 set nobackup									" 백업파일 안만들기
 set noswapfile
 set visualbell
@@ -89,7 +86,11 @@ syntax on 					 														  " 구문강조 사용
 filetype indent on   														  " 파일 종류에 따른 구문강조
 highlight Comment term=bold cterm=bold ctermfg=4  " 코멘트 하이라이트
 
-
-
 set background=dark
 colorscheme jellybeans
+
+"" 마지막으로 수정된 곳에 커서를 위치함
+au BufReadPost *
+            \ if line("'\"") > 0 && line("'\"") <= line("$") |
+            \ exe "norm g`\"" |
+            \ endif
