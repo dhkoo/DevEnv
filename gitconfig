@@ -1,0 +1,18 @@
+[user]
+	name = dhkoo
+	email = donghun_koo@tmax.co.kr
+
+[alias]
+	br = branch
+	co = checkout
+	st = status
+	cm = commit
+	df = diff
+	rb = rebase -i
+	d = difftool
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
