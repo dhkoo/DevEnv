@@ -1,4 +1,8 @@
-vimrc setting
+
+[Change files name]
+: vimrc -> .vimrc
+: tmux.conf -> .tmux.conf
+: gitconfig -> .gitconfig
 
 [vim]
 1. $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -16,5 +20,5 @@ Ctrl + \ + s/g/c/t/e..
 mv .tmux.conf ~
 
 [github]
-자동완성 관련 파일
-gitconfig에서 alias 설정
+mv git-completion.bash ~
+mv .gitconfig ~
