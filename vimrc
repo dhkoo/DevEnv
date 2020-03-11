@@ -48,6 +48,7 @@ set tenc=utf-8                 " 터미널 인코딩
 set expandtab                  " 탭대신 스페이스
 set hlsearch                   " 검색어 강조, set hls 도 가능
 set ignorecase                 " 검색시 대소문자 무시, set ic 도 가능
+set nowrapscan                 " 검색 시 파일 끝에서 되돌려 검색하지 않게
 set tabstop=2                  " 탭을 2칸으로
 set lbr
 set incsearch                  " 키워드 입력시 점진적 검색
