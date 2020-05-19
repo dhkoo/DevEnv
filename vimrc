@@ -63,6 +63,7 @@ set clipboard=unnamedplus,autoselect
 set clipboard=unnamed
 set paste
 set encoding=utf-8
+set diffopt=vertical
 
 if has('cscope')
 	set csprg=/usr/local/bin/cscope
