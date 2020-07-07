@@ -64,6 +64,7 @@ set clipboard=unnamed
 set paste
 set encoding=utf-8
 set diffopt=vertical
+set colorcolumn=80						" 개행기준 선"
 
 if has('cscope')
 	set csprg=/usr/local/bin/cscope
