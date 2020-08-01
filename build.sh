@@ -30,6 +30,7 @@ cp vimrc ~/.vimrc
 cp tmux.conf ~/.tmux.conf
 cp gitconfig ~/.gitconfig
 cp git-completion.bash ~/.git-completion.bash
+sudo chmod 775 mkcscope && cp mkcscope /usr/local/bin
 mkdir ~/.vim/plugin
 cp cscope_maps.vim ~/.vim/plugin
 
