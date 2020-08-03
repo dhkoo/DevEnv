@@ -38,6 +38,7 @@ set softtabstop=2              " tab대신 space를 2칸으로 인식
 set smarttab
 set colorcolumn=80						 " 개행기준 선"
 
+set autochdir                  " Automatically change the current directory"
 set nu
 set nocompatible
 set autoindent
