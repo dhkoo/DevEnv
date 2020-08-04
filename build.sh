@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # environments
 cat >> ~/.bashrc << EOF
@@ -31,11 +31,16 @@ cp tmux.conf ~/.tmux.conf
 cp gitconfig ~/.gitconfig
 cp git-completion.bash ~/.git-completion.bash
 sudo chmod 775 mkcscope && cp mkcscope /usr/local/bin
-mkdir ~/.vim/plugin
+if [ ! -d "~/.vim/plugin" ]; then
+  mkdir ~/.vim/plugin
+fi
 cp cscope_maps.vim ~/.vim/plugin
 
 # install vim plugins
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -d "~/.vim/bundle/Vundle.vim" ]; then
+  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
+
 vim -c PluginInstall -c q -c q
 
 source ~/.bashrc
