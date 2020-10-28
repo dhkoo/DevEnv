@@ -2,6 +2,8 @@
 
 # environments
 cat >> ~/.bashrc << EOF
+export PS1="\[$(tput setaf 1)\]\u@\h:\[$(tput setaf 7)\]\W\\$ \[$(tput sgr0)\]"
+
 alias gr='grep -Hirn'
 alias grw='grep -Hirnw'
 

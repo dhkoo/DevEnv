@@ -77,6 +77,11 @@ nmap <F8> :Tagbar<CR>
 nmap ,q :bprevious<CR>
 nmap ,w :bnext<CR>
 
+" for tabnew,tabnext, tabprevious shortcut
+nmap ,1 :tabprevious<CR>
+nmap ,2 :tabnext<CR>
+nmap ,3 :tabnew<CR>
+
 " 현재 디렉토리에 cscope 파일이 없는 경우 상위
 " 디렉토리로 이동하여 cscope 파일을 찾는 함수
 set nocsverb
