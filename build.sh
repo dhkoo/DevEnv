@@ -7,6 +7,8 @@ export PS1="\[$(tput setaf 1)\]\u@\h:\[$(tput setaf 7)\]\W\\$ \[$(tput sgr0)\]"
 alias gr='grep -Hirn'
 alias grw='grep -Hirnw'
 
+export TERM="xterm-256color"
+
 source ~/.git-completion.bash
 EOF
 
@@ -38,7 +40,10 @@ if [ ! -d "~/.vim/plugin" ]; then
 fi
 cp cscope_maps.vim ~/.vim/plugin
 
-# install vim plugins
+if [ ! -d "~/.vim/bundle" ]; then
+  mkdir ~/.vim/bundle
+fi
+
 if [ ! -d "~/.vim/bundle/Vundle.vim" ]; then
   git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
