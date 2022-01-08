@@ -34,14 +34,14 @@ cp vimrc ~/.vimrc
 cp tmux.conf ~/.tmux.conf
 cp gitconfig ~/.gitconfig
 cp git-completion.bash ~/.git-completion.bash
-sudo chmod 775 mkcscope && cp mkcscope /usr/local/bin
+sudo chmod 775 mkcscope && sudo cp mkcscope /usr/local/bin
 if [ ! -d "~/.vim/plugin" ]; then
-  mkdir ~/.vim/plugin
+  mkdir -p ~/.vim/plugin
 fi
 cp cscope_maps.vim ~/.vim/plugin
 
 if [ ! -d "~/.vim/bundle" ]; then
-  mkdir ~/.vim/bundle
+  mkdir -p ~/.vim/bundle
 fi
 
 if [ ! -d "~/.vim/bundle/Vundle.vim" ]; then

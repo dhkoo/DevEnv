@@ -2,6 +2,8 @@
 	name =
 	email =
 
+[core]
+  editor = vim
 [alias]
 	br = branch
 	co = checkout
@@ -10,6 +12,8 @@
 	df = diff
 	rb = rebase -i
 	d = difftool
+  lg = log --graph
+
 [diff]
 	tool = vimdiff
 [difftool]
